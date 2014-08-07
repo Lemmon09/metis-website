@@ -1,0 +1,19 @@
+{% extends "news/application.html" %}
+{% load staticfiles %}
+
+{% block subtitle %}
+    <!-- No title on main page -->
+{% endblock %}
+
+{% block body %}
+    <div id="mainPageBackground" style="background-image: url('{% static 'news/images/Circuitboard.jpg' %}'); ">
+        <h3 class="imageQuote"> 
+            <span class="imageQuoteBackground" style="color:white; font-size:3em">
+                Websites promote you 24/7,
+            </span>
+            <span class="imageQuoteBackground" style="color:white; font-size:3em">
+                365 days a year
+            </span>
+        </h3>
+    </div>
+{% endblock %}

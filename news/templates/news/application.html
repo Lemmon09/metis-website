@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+    
+    <head>
+        <!-- Load application level resources
+        Jquery
+        App-level css like frameworks
+        navbar
+        -->
+        {% load static from staticfiles %}
+
+        <link rel="stylesheet" href="{% static 'news/css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'news/css/application.css' %}">
+        <link rel="stylesheet" type="text/less" media="screen" href="{% static 'news/css/grid.less' %}">
+        <script src="{% static 'news/js/less.js' %}"></script>
+        <script src="{% static 'news/js/jquery-2.1.1.js' %}"></script>
+        <script src="{% static 'news/js/bootstrap.js' %}"></script>
+        
+        
+        <title>
+        {% block title %}
+            J &amp; S Web Designs  
+        {% endblock %}
+        </title>
+    </head>
+    
+  
+    
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a  href="http://metis-c9-lemmon09.c9.io/news/">
+                <img class="img-responsive" src="{% static 'news/images/CompanyLogo.jpg' %}"
+                    id="companyLogo" style="height:40px" name="companyLogo" alt ="Company Logo"/>
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>                    
+                    <a href="http://metis-c9-lemmon09.c9.io/news/aboutUs">About Us</a>
+                </li>
+                <li>
+                    <a href="http://metis-c9-lemmon09.c9.io/news/services">Services</a>
+                </li>
+                <li>
+                    <a href="http://metis-c9-lemmon09.c9.io/news/contactUs">Contact Us</a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+
+    <body>
+        <div class="wrapper">
+            {% block body %}
+            {% endblock %}
+        
+            <div class="push"></div>
+        </div>
+        <div class="col-sm-4"></div>
+        <footer class="col-sm-4">
+            {% block footer %}
+                <ul class="footer">
+                    <li> J &amp; S Web Designs </li>
+                    <li> (606) 585-3849 </li>
+                    <li> Email Us </li>
+                </ul>
+            {% endblock %}
+        </footer>
+        <div class="col-sm-4"></div>
+    </body>
+    
+
+</html>

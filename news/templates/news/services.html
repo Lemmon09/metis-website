@@ -1,0 +1,52 @@
+{% extends "news/textBased.html" %}
+{% load staticfiles %}
+
+{% block subtitle %}
+    Services
+{% endblock %}
+
+        
+{% block mainSection %}
+    <p>
+        There's a lot involved in making a website--but you shouldn't have to worry about that.
+        We have a simple pricing structure so you can know exactly what to expect for each package. 
+    </p>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th><!--Row Descriptions --></th>
+                <th> Simple </th>
+                <th> Expandable</th>
+                <th> Kitchen Sink</th>
+            </tr>    
+        </thead>
+        <tbody>
+            <tr> 
+                <td>Number of Pages</td>
+                <td>1 landing page</td>
+                <td>5 any-type pages</td>
+                <td>Unlimited</td>
+            </tr>
+            <tr>
+                <td>Extra Pages</td>
+                <td>None</td>
+                <td>$100/Page</td>
+                <td>Free!</td>
+            </tr>
+            <tr>
+                <td>Internet Advertising/Improved Searchability</td>
+                <td>None</td>
+                <td>None</td>
+                <td>Free!</td>
+            </tr>
+            <tr>
+                <td>Cost</td>
+                <td><s>$750</s> $550</td>
+                <td><s>$1,000</s> $750</td>
+                <td><s>$2,000</s> $1,500</td>
+            </tr>
+        </tbody>            
+    </table>
+    
+{% endblock %}

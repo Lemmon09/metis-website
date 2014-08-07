@@ -1,0 +1,57 @@
+@import 'grid.less';
+@column-width: 60;
+@gutter-width: 20;
+@columns: 12;
+@total-width: 100%;
+
+
+
+.footer > li{
+    float: left;
+    margin-right: 25px;
+}
+.footer > li:first-child{
+    list-style-type: none;
+}
+
+#mainPageBackground{
+    height: 850px;
+    width: max-width;
+    background-repeat: no-repeat;
+}
+
+.imageQuote{
+    color: white;
+    text-align: center;
+    text-align: middle;
+    z-index:100;
+    position:absolute;
+    color:black;
+    font-size:24px;
+    font-weight:bold;
+    left:150px;
+    top:350px;
+}
+
+.imageQuoteBackground{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.footer, .push {
+    height: 4em;
+}
+
+.footer {
+    text-align: middle;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
+}
+
+html, body {
+    height: 100%;
+}
